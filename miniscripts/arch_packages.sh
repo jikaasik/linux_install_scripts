@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pacman -S --noconfirm ranger rofi nitrogen feh evince compton git geany wget unzip arch-install-scripts lxappearance arc-gtk-theme imagemagick python-pywal fcron keepass texlive-most r isync msmtp zsh powerline-fonts gnupg gcc-fortran gzip adobe-source-code-pro-fonts pandoc auctex neomutt emacs vim rxvt-unicode pdfpc lib32-gtk2 lib32-glib2 lib32-libpng12 libpng12 libreoffice-fresh gcc-fortran base-devel mpd mpc ncmpcpp gparted firefox grep arandr bluez bluez-utils vis anki cups cups-pdf glibc offlineimap nemo perl perl-anyevent-i3 powerline sudo ttf-dejavu ttf-font-awesome unzip xf86-input-synaptics dialog

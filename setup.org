@@ -1,0 +1,132 @@
+* Arch
+** Partitions & Mount Points
+  SDA
+   1) EFI
+   2) Swap
+   3) Work
+   4) Archive
+   5) Media
+   6) Home
+   7) Arch
+   8) Secondary Linux
+** Applications
+*** Pacman
+**** gcc-fortran
+**** zsh
+***** oh-my-zsh
+**** r
+**** texlive-full
+**** auctex
+**** texmaker
+**** emacs
+***** .emacs.d
+***** gcal
+**** mu
+**** isync
+***** .mbsyncrc
+**** msmtp
+***** .msmtprc
+**** git
+**** gnupg
+***** pitt.gpg
+***** gmail.gpg
+**** yaourt
+**** ssh
+**** fcrontab
+     0 22 * * * ~/backup/do_backup.sh &
+     0 22 1 * * ~/backup/monthly_backup.sh &
+     0 22 * * * ~/backup/backup_home.sh &
+     5 * * * * find /Work/Writing/*.bbl -exec rm -f {} \;
+     5 * * * * find /Work/Writing/*.aux -exec rm -f {} \;
+     5 * * * * find /Work/Writing/*.log -exec rm -f {} \;
+     5 * * * * find /Work/Writing/*.org -exec rm -f {} \;
+     5 * * * * find /Work/Writing/*.org~ -exec rm -f {} \;
+     5 * * * * find /Work/Writing/*.bak -exec rm -f {} \;
+     5 * * * * find /Work/Writing/*.tex -exec rm -f {} \;
+**** vim
+*** Yaourt
+**** cmus
+**** rstudio-desktop-bin
+***** Packages   
+      install.packages("tidyverse", dependencies=TRUE)
+      install.packages("vars", dependencies=TRUE)
+      install.packages("stargazer", dependencies=TRUE)
+      install.packages("timeSeries", dependencies=TRUE)
+      install.packages("tseries", dependencies=TRUE)
+      install.packages("dlnm", dependencies=TRUE)
+      install.packages("orcutt", dependencies=TRUE)
+      install.packages("dplyr", dependencies=TRUE)
+      install.packages("ggplot2", dependencies=TRUE)
+      install.packages("psych", dependencies=TRUE)
+      install.packages("RColorBrewer", dependencies=TRUE)
+      install.packages("Hmisc", dependencies =TRUE)
+      install.packages("foreign", dependencies=TRUE)
+      install.packages("zoo", dependencies=TRUE)
+      install.packages("astsa", dependencies=TRUE)
+      install.packages("TSA", dependencies=TRUE)
+      install.packages("party", dependencies=TRUE)
+      install.packages("animation", dependencies=TRUE)
+      install.packages("googleVis", dependencies=TRUE)
+      install.packages("sandwich", dependencies=TRUE)
+      install.packages("lmtest", dependencies=TRUE)
+      install.packages("dynlm", dependencies=TRUE)
+      install.packages("quadprog", dependencies=TRUE)
+      install.packages("car", dependencies=TRUE)
+      install.packages("swirl")
+      install.packages("readxl", dependencies=TRUE)
+      install.packages("scatterplot3d", dependencies=TRUE)
+      install.packages("rgl", dependencies=TRUE)
+      install.packages("haven", dependencies=TRUE)
+
+      install.packages(c("devtools","mvtnorm","loo","coda"), repos="https://cloud.r-project.org/",dependencies=TRUE)
+      library(devtools)
+      install_github("rmcelreath/rethinking")
+**** skype
+**** spotify
+**** dropbox?
+*** Other
+**** stata
+**** anaconda
+** Rice
+** Permissions
+*** /Archive
+*** /Work
+*** /Media
+*** /Home
+*** /usr/local/stata
+*** /usr/local/anaconda
+*** 
+** Passwords
+*** Create encrypted file that lists all passwords.
+** New partitions
+*** home
+*** archive
+**** mail
+**** receipts
+**** downloads*
+**** projects
+**** configs
+**** dropbox
+**** comps
+**** coursework
+**** teaching
+**** data
+**** pictures
+**** language
+**** random .org files
+*** media
+**** photography
+***** albums
+****** (finished is in parent folder)
+****** raw
+***** temp
+**** audio
+(music)
+**** video
+(films/trips?)
+*** work
+**** cv
+**** dissertation
+**** project_rights
+**** project_investment
+**** writing
