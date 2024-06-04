@@ -55,9 +55,9 @@ echo "$username:$pass1" | chpasswd >/dev/tty6
 echo -e "root ALL=(ALL) ALL" >> /etc/sudoers
 echo -e "wheel ALL=(ALL) ALL" >> /etc/sudoers
 
-chmod -R 777 /archive
-chmod -R 777 /media
-chmod -R 777 /work
+chmod -R 755 /archive
+chmod -R 755 /media
+chmod -R 755 /work
 
 # Audio and Bluetooth 
 pacman -S pulseaudio pulseaudio-alsa bluez bluez-utils pulseaudio-bluetooth
